@@ -34,7 +34,19 @@ function createButton() {
         button.classList.add("clear-button");
         document.body.prepend(button);
     }
+    function addClearEffect() {
+        function clearGrid() {
+            let squares = document.querySelectorAll(".grid-square");
+            squares.forEach((square) => {
+                square.classList.remove("hover-effect");
+            })
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", clearGrid);
+    }
     addButton();
+    addClearEffect();
 }
 
 createGrid();
