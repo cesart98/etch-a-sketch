@@ -28,4 +28,14 @@ function createGrid() {
     addHoverEffect();
 }
 
+function createButton() {
+    function addButton() {
+        let button = document.createElement("button");
+        button.classList.add("clear-button");
+        document.body.prepend(button);
+    }
+    addButton();
+}
+
 createGrid();
+createButton();
