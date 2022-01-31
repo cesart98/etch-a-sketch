@@ -19,3 +19,7 @@ body {
     width: 40px;
     border: 1px solid black;
 }
+
+.hover-effect {
+    background-color: green;
+}
