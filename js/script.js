@@ -10,11 +10,22 @@ function createGrid() {
         gridSquare.classList.add("grid-square");
         container.append(gridSquare);
     }
+    function addHoverEffect() {
+        function changeColor(event) {
+            event.target.classList.add("hover-effect");
+        }
 
+        let squares = document.querySelectorAll(".grid-square");
+        squares.forEach((square) => {
+            square.addEventListener("mouseover", changeColor);
+        })
+    }
+    
     addContainer();
-    for (let i = 1; i < 257; i++) {
+    for (let i = 1; i < 257; i++) { // adds 256 grid squares to container
         addGridSquare();
     }
+    addHoverEffect();
 }
 
 createGrid();
