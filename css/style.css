@@ -10,12 +10,12 @@ body {
     width: 640px;
     min-width: 640px;
     max-height: 640px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .grid-square {
     box-sizing: border-box;
     height: 40px;
     width: 40px;
-    border: 1px solid red;
+    border: 1px solid black;
 }
